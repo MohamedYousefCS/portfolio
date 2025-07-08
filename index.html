@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a324c">
+  <meta name="msapplication-navbutton-color" content="#1a324c">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description"
+    content="Mohamed Yousef is a self-taught Software Developer who has been building accessible websites since 2023.">
+  <link rel="stylesheet" href="static/css/main.css" />
+  <link rel="stylesheet" href="static/css/index.css" />
+  <link rel="icon" href="static/images/about/Mohamed.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+  <!-- Google fonts -->
+  <style>
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+  </style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3FM96129M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y3FM96129M');
+  </script>
+
+  <title>Mohamed Yousef: Software Developer</title>
+</head>
+
+<body>
+  <a href="#main" class="skip-to-main-content">Skip to main content</a>
+  <header>
+    <div class="fixed-header animate-background">
+      <div class="container header-container">
+        <div class="logo-container">
+          <span class="logo animate-logo" role="heading" aria-level="1">Mohamed Yousef</span>
+        </div>
+        <div class="header-text">
+          <h1 role="heading" aria-level="2">
+            <p class="animate-text-1"> Software Developer</p>
+          </h1>
+        </div>
+        <h2 class="animate-subtitle" role="heading" aria-level="3">
+           I specialize in crafting responsive and accessible websites
+            that combine performance with great user experience.
+        </h2>
+        <button class="scroll-button animate-scroll" tabindex="0">
+          <span class="arrow">↓</span> scroll
+        </button>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <a href="/" class="nav-logo" title="Back to Homepage">
+        Mohamed Yousef
+      </a>
+      <div class="nav-links">
+        <a href="about.html" class="link">about</a>
+        <a href="projects.html" class="link">projects</a>
+        <div class="social-media">
+          <a href="https://github.com/MohamedYousefCS" title="Github">
+                        <i class="demo-icon icon-github-circled" aria-hidden="true"></i>
+            <span class="visually-hidden">Github</span>
+          </a>
+          <a href="https://www.linkedin.com/in/mohamed-yousef-houtar" title="LinkedIn">
+            <i class="demo-icon icon-linkedin" aria-hidden="true"></i>
+            <span class="visually-hidden">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+      <div class="nav-controls">
+        <button id="menu-display" title="Show Menu" class="hamburger"></button>
+        <button id="theme-display" title="Select a color scheme" class="control">
+          <i aria-hidden="true" class="demo-icon icon-cog"></i>
+          <span class="visually-hidden">Select a color scheme</span>
+        </button>
+      </div>
+      <div class="theme-container">
+        <button class="light theme-select" id="light-select" onclick="setTheme('light')" aria-label="Set light theme">
+          <div class="theme-label">
+            Light
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="dark theme-select" id="dark-select" onclick="setTheme('dark')"
+          onkeydown="(e) => setThemeKey(e, 'dark')" aria-label="Set dark theme">
+          <div class="theme-label">
+            Dark
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="brown theme-select" id="brown-select" onclick="setTheme('brown')" aria-label="Set brown theme">
+          <div class="theme-label">
+            Brown
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="green theme-select" id="green-select" onclick="setTheme('green')" aria-label="Set green theme">
+          <div class="theme-label">
+            Green
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="pink theme-select" id="pink-select" onclick="setTheme('pink')" aria-label="Set pink theme">
+          <div class="theme-label">
+            Pink
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="neon theme-select" id="neon-select" onclick="setTheme('neon')" aria-label="Set pink theme">
+          <div class="theme-label">
+            Neon
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <main id="main">
+    <section id="about" class="about-section">
+      <div class="container inner-container">
+        <div class="intro scroll-in">
+          <h2 class="section-title">Hello, I'm Mohamed Yousef <span class="title-icon">&#128578;</span></h2>
+          <div class="section-subtitle">
+            <p role="heading" aria-level="3">
+              I’m a passionate Software and Web Developer with solid experience in building web applications using ASP.NET 
+              and working extensively in Microsoft Dynamics 365 Finance and Operations.
+            </p>
+            <p>
+               I currently work at <a
+               href="https://pioneersit.com/" target="_blank"
+               aria-label="pioneers it (opens in a new tab)">Pioneers IT – a Microsoft Solutions Partner, </a>
+                where I contribute to delivering customized and scalable business solutions.
+            </p>
+            <p>
+            I specialize in creating responsive, accessible, and visually appealing websites,
+               with a strong commitment to quality and usability. </p>
+           
+        
+          </div>
+          <div class="section-link">
+            <a href="about.html" class="link-btn">More About Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="wave-border top">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;" role="presentation">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: var(--shade-100)"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+          style="stroke: var(--neon-color);fill: none;"></path>
+      </svg>
+    </div>
+    <section id="talks" class="featured-section talks-section">
+      <div class="container">
+        <div class="title-container scroll-in">
+          <h2 class="section-title">Projects <span class="title-icon">&#128187;</span></h2>
+
+          <p class="section-subtitle" role="heading" aria-level="3">
+          Over the years, I’ve created various websites and applications
+         that showcase my practical experience and enthusiasm for developing intelligent,
+          user-centric digital solutions.
+          </p>
+        </div>
+        <div class="featured-container talks-container">
+          <div class="card scroll-in">
+            <div class="card-image">
+              <a href="https://dazzling-entremet-f56f43.netlify.app/"
+                title="Esase Wear E-Commerce Platform" target="_blank" rel="noopener">
+                <img src="./static/images/ProjectsImg/Esase Wear.png" alt="Esase Wear E-Commerce Platform"
+                  width="480" height="360">
+              </a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                Esase Wear
+              </h3>
+              <div class="card-description">
+                <p>
+                  Esase Wear E-Commerce Platform
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card scroll-in">
+            <div class="card-image">
+              <a href="http://attendancesystem.runasp.net/"
+                title="Attendance/Time Tracking System" target="_blank"
+                rel="noopener">
+                <img src="./static/images/ProjectsImg/Attendance.png"
+                  alt="Attendance/Time Tracking System" width="480"
+                  height="360">
+              </a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                Attendance/Time Tracking System
+              </h3>
+              <div class="card-description">
+                <p>
+                  Attendance/Time Tracking System (ITI)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card scroll-in">
+            <div class="card-image">
+              <a href="https://bookamark.netlify.app/"
+                title="Bookmark"
+                target="_blank" rel="noopener">
+                <img src="./static/images/ProjectsImg/Bookmark.png"
+                  alt="Bookmark" width="480"
+                  height="360">
+              </a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                Bookmark 
+              </h3>
+              <div class="card-description">
+                <p>
+                  Bookmark
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card scroll-in">
+            <div class="card-image">
+              <a href="https://github.com/MohamedYousefCS/Travel-Website-API"
+                title="travel booking and management website"
+                target="_blank" rel="noopener">
+                <img src="./static/images/ProjectsImg/Hotel.png"
+                  alt="travel booking and management website"
+                  width="480" height="360">
+              </a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                Travel Website
+              </h3>
+              <div class="card-description">
+                <p>
+                  Travel booking and management Website 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card scroll-in">
+            <div class="card-image">
+              <a href="https://crudsoperations.netlify.app/"
+                title="Product Management System" target="_blank"
+                rel="noopener">
+                <img src="./static/images/ProjectsImg/CRUD.png"
+                  alt="Product Management System" width="480" height="360">
+              </a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                Product Management
+              </h3>
+              <div class="card-description">
+                <p>
+                  Product Management System
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card scroll-in">
+            <div class="card-image">
+              <a href="https://dazzling-entremet-f56f43.netlify.app/"
+                title="E-Commerce Website Platform" target="_blank"
+                rel="noopener">
+                <img src="./static/images/ProjectsImg/Clothes.png"
+                  alt="E-Commerce Website Platform" width="480"
+                  height="360">
+              </a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                E-Commerce Website
+              </h3>
+              <div class="card-description">
+                <p>
+                  E-Commerce Website Platform
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-link scroll-in">
+          <a href="projects.html" class="link-btn">View All Projects</a>
+        </div>
+      </div>
+    </section>
+    <div class="wave-border bottom">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;" role="presentation">
+        <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+          style="stroke: none; fill: var(--shade-100);"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98"
+          style="stroke: var(--neon-color); fill: none;"></path>
+      </svg>
+    </div>
+  </main>
+  <footer class="index-footer">
+    <div class="container">
+      <div class="social-media">
+        <a href="https://github.com/MohamedYousefCS" title="Github">
+                      <i class="demo-icon icon-github-circled" aria-hidden="true"></i>
+            <span class="visually-hidden">Github</span>
+        </a>
+        <a href="https://www.linkedin.com/in/mohamed-yousef-houtar" title="LinkedIn">
+          <i class="demo-icon icon-linkedin" aria-hidden="true"></i>
+          <span class="visually-hidden">LinkedIn</span>
+        </a>
+      </div>
+      <div class="copyright">
+        &copy; designed & built by <a href="https://www.linkedin.com/in/mohamed-yousef-houtar">Mohamed Yousef</a> <span
+          class="heart">&hearts;</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="./static/js/index.js"></script>
+<script src="./static/js/landing-page.js"></script>
+
+</html>

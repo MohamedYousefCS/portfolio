@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a324c">
+  <meta name="msapplication-navbutton-color" content="#1a324c">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="All the webpages, websites and applications I've created.">
+  <link rel="stylesheet" href="static/css/main.css" />
+  <link rel="stylesheet" href="static/css/page.css" />
+  <link rel="stylesheet" href="static/css/projects.css" />
+<link rel="icon" href="static/images/about/Mohamed.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3FM96129M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y3FM96129M');
+  </script>
+
+  <title>Mohamed Yousef: Projects</title>
+</head>
+
+<body>
+  <a href="#main" class="skip-to-main-content">Skip to main content</a>
+  <nav class="visible">
+    <div class="container">
+      <a href="/" class="nav-logo" title="Back to Homepage">
+        Mohamed Yousef
+      </a>
+      <div class="nav-links">
+        <a href="about.html" class="link">about</a>
+        <a href="projects.html" class="link active">projects</a>
+        <div class="social-media">
+          <a href="https://github.com/MohamedYousefCS" title="Github">
+                        <i class="demo-icon icon-github-circled" aria-hidden="true"></i>
+            <span class="visually-hidden">Github</span>
+          </a>
+          <a href="https://www.linkedin.com/in/mohamed-yousef-houtar" title="LinkedIn">
+            <i class="demo-icon icon-linkedin" aria-hidden="true"></i>
+            <span class="visually-hidden">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+      <div class="nav-controls">
+        <button id="menu-display" title="Show Menu" class="hamburger">
+
+        </button>
+        <button id="theme-display" title="Select a color scheme" class="control">
+          <i aria-hidden="true" class="demo-icon icon-cog"></i>
+          <span class="visually-hidden">Select a color scheme</span>
+        </button>
+      </div>
+      <div class="theme-container">
+        <button class="light theme-select" id="light-select" onclick="setTheme('light')" aria-label="Set light theme">
+          <div class="theme-label">
+            Light
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="dark theme-select" id="dark-select" onclick="setTheme('dark')"
+          onkeydown="(e) => setThemeKey(e, 'dark')" aria-label="Set dark theme">
+          <div class="theme-label">
+            Dark
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="brown theme-select" id="brown-select" onclick="setTheme('brown')" aria-label="Set brown theme">
+          <div class="theme-label">
+            Brown
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="green theme-select" id="green-select" onclick="setTheme('green')" aria-label="Set green theme">
+          <div class="theme-label">
+            Green
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="pink theme-select" id="pink-select" onclick="setTheme('pink')" aria-label="Set pink theme">
+          <div class="theme-label">
+            Pink
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="neon theme-select" id="neon-select" onclick="setTheme('neon')" aria-label="Set pink theme">
+          <div class="theme-label">
+            Neon
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <main id="main">
+    <section class="container">
+      <h1 class="section-title">Projects <span class="title-icon">&#128187;</span></h1>
+      <p class="section-subtitle">
+        Over the years, I’ve created various websites and applications
+         that showcase my practical experience and enthusiasm for developing intelligent,
+          user-centric digital solutions.
+      </p>
+    </section>
+  
+    <section id="apps" class="container">
+      <h2 class="subsection-title">
+        Web Apps (8)
+      </h2>
+      <div class="main-text project-scroll">
+       
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/ProjectsImg/Esase Wear.png" width="720" height="340" alt="Esase Wear Website">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Esase Wear</h3>
+            <p>Esase Wear website</p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://dazzling-entremet-f56f43.netlify.app/" target="_blank" rel="noopener">visit site</a>
+              <a href="https://github.com/MohamedYousefCS/EsaseWear_E-Commerce" target="_blank" rel="noopener">source
+                code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/ProjectsImg/Attendance.png" width="720" height="340"
+              alt="Attendance/Time Tracking System">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Attendance/Time Tracking System</h3>
+            <p>A site is a simple and basic solution designed to streamline the process of monitoring attendance.</p>
+            <ul class="project-tags">
+              <li>HTML - CSS</li>
+              <li>JS</li>
+              <li>C#</li>
+              <li>ASP.NET Core</li>
+              <li>SQL</li>
+            </ul>
+            <div class="project-links">
+              <a href="http://attendancesystem.runasp.net/" target="_blank" rel="noopener">visit
+                site</a>
+              <a href="https://github.com/MohamedYousefCS/Attendance_Tracking_System" target="_blank" rel="noopener">source
+                code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/ProjectsImg/Hotel.png" width="720" height="340" alt="Hotel Reservation System">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Hotel Reservation</h3>
+            <p>System is designed to streamline the process of booking hotel rooms online.</p>
+            <ul class="project-tags">
+              <li>HTML - CSS</li>
+              <li>JS</li>
+              <li>C#</li>
+              <li>ASP.NET Core</li>
+              <li>SQL</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">visit
+                site</a>
+              <a href="https://github.com/MohamedYousefCS/Hotel-Reservation-System" target="_blank" rel="noopener">source
+                code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/ProjectsImg/Bookmark.png" width="720" height="340"
+              alt="Bookmark website">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Bookmark</h3>
+            <p>Site is a tool designed to save and manage your links efficiently</p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://bookamark.netlify.app/" target="_blank" rel="noopener">visit site</a>
+              <a href="https://github.com/MohamedYousefCS/Bookmark" target="_blank" rel="noopener">source
+                code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/ProjectsImg/CRUD.png" width="720" height="340"
+              alt="Product Management System">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Product Management</h3>
+            <p>Product Management System</p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://crudsoperations.netlify.app/" target="_blank" rel="noopener">visit site</a>
+              <a href="https://github.com/MohamedYousefCS/CRUD_Operations" target="_blank" rel="noopener">source
+                code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/ProjectsImg/Clothes.png" width="720" height="340"
+              alt="E-Commerce Website Platform">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">E-Commerce Website Platform</h3>
+            <p>A site is a E-Commerce Website Platform</p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://dazzling-entremet-f56f43.netlify.app/" target="_blank" rel="noopener">visit
+                site</a>
+              <a href="https://github.com/MohamedYousefCS/EsaseWear_E-Commerce" target="_blank" rel="noopener">
+                source code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/ProjectsImg/Room.png" width="720" height="340" alt="Travel Website">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Travel Website</h3>
+            <p>Travel booking and management Website</p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+              <li>MVC WEBAPI</li>
+              <li>SQL</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">visit site</a>
+              <a href="https://github.com/MohamedYousefCS/Travel-Website-API" target="_blank" rel="noopener">source
+                code</a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./static/images/ProjectsImg/Attendance.png" width="720" height="340"
+              alt="Attendance/Time Tracking System">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">Attendance/Time Tracking</h3>
+            <p>Attendance/Time Tracking System</p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+              <li>C#</li>
+              <li>SQL</li>
+              <li>LINQ</li>
+              <li>EF</li>
+            </ul>
+            <div class="project-links">
+              <a href="http://attendancesystem.runasp.net/" target="_blank" rel="noopener">visit site</a>
+              <a href="https://github.com/MohamedYousefCS/Attendance_Tracking_System" target="_blank" rel="noopener">source
+                code</a>
+            </div>
+          </div>
+        </div>
+        <div class="more-link">
+          <a href="https://github.com/MohamedYousefCS" target="_blank" rel="noopener">
+            See all &#8594;
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="page-nav container">
+    <a href="about.html">&#8592; About</a>
+  </div>
+  <div class="wave-border top">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;" role="presentation">
+      <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+        style="stroke: none; fill: var(--shade-100)"></path>
+      <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+        style="stroke: var(--neon-color);fill: none;"></path>
+    </svg>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="social-media">
+        <a href="https://github.com/MohamedYousefCS" title="Github">
+          <i class="demo-icon icon-github-circled" aria-hidden="true"></i>
+          <span class="visually-hidden">Github</span>
+        </a>
+        <a href="https://www.linkedin.com/in/mohamed-yousef-houtar" title="LinkedIn">
+          <i class="demo-icon icon-linkedin" aria-hidden="true"></i>
+          <span class="visually-hidden">LinkedIn</span>
+        </a>
+      </div>
+      <div class="copyright">
+        &copy; designed & built by <a href="https://www.linkedin.com/in/mohamed-yousef-houtar">Mohamed Yousef</a> <span
+          class="heart">&hearts;</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="./static/js/index.js"></script>
+
+</html>
